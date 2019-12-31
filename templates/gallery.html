@@ -1,0 +1,194 @@
+{% load static %}
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>first bootstrap practise</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equip="X-UA-Compatibel" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>document</title>
+   </head>
+   <body>
+    
+    <header class="header">
+      <div class="sticky-top">
+        <nav class="navbar navbar-expand-sm bg-white navbar-dark " style="text-transform:uppercase;">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <a href="#"><img class="logo" src="{% static 'img/logo.png' %}"></a>
+
+                    
+
+
+                </div>
+
+            <!--ml-auto for taking all buttoms to right...and mr-auto to take all buttoms to left-->
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item"><a href="aims/index" class="nav-link" style="color:black">Home</a></li>
+                    <li class="nav-item"><a href="# " class="nav-link" style="color:black" >contact</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="color:black">about us</a></li>
+            
+                </ul>
+
+
+            </div>
+        </nav>
+        </div>
+    </header>
+
+
+<!--first type of images begins here-->
+    <div class="gallerytext">
+        <center>
+            <button class="btn btn-third" >Training</button>
+        </center>
+    </div>
+
+
+<br/><br/><br/>
+
+
+    <div class="container">
+        <div class="row">
+
+    
+
+        {% for train in trains %}
+        <div class="card cardbox">
+            <img class="card-img-top" src="{{train.img.url}}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">{{train.name}}</h4>
+                <p class="card-text">{{train.desc}}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+        
+
+
+    </div>
+
+    </div>
+
+        
+
+
+<!--second content type of images begins here-->
+
+        <div class="gallerytext">
+        <center>
+            <button class="btn btn-third" >Special programs</button>
+        </center>
+    </div>
+
+<div class="container">
+    
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/s1.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title"> Program 1</h4>
+                <p class="card-text">Teacher vs Student futsal tournament.</p>
+            </div>
+        </div>
+
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/s2.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">Program 2</h4>
+                <p class="card-text">3rd semester Hiking Program #2074 batch.</p>
+            </div>
+        </div>
+
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/s3.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">Program 3</h4>
+                <p class="card-text">Inter-School Volleyball Tournament held in Birat Multiple...under the captaincy of Manish Adhikari.</p>
+            </div>
+        </div>
+
+
+
+
+        
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/s4.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">Program 4</h4>
+                <p class="card-text">Holi special pragram held in Aims College...</p>
+            </div>
+        </div>
+
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/s5.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">Program 5</h4>
+                <p class="card-text">Holi special</p>
+            </div>
+        </div>
+
+    </div>
+
+<!--Third type of images begins here-->
+
+        <div class="gallerytext">
+        <center>
+            <button class="btn btn-third" >Students Achievements</button>
+        </center>
+    </div>
+
+<div class="container">
+    
+    <div class="row">
+    
+
+        
+
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/a4.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">Achievement 4</h4>
+                <p class="card-text">Python for Data Science by Ishan Dhakal</p>
+            </div>
+        </div>
+
+        <div class="card cardbox">
+            <img class="card-img-top" src="{% static 'img/a5.jpg' %}" alt="Card image" style="width:100%;">
+            <div class="card-body">
+                <h4 class="card-title">Achievement 5</h4>
+                <p class="card-text">Python for Data Science achievement by Jony Jung Karki..</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        
+
+    
+
+
+    
+        
+    
+
+
+    
+
+    </body>
+
+    
+    </html>
+    

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: auto;
+}
+
+.logo {
+    height: 150px;
+    padding: 2px;
+}
+
+.icon-bar {
+    background: darkorange;
+}
+
+a.nav-link {
+    color: red;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+a.nav-link:hover {
+    color: red;
+    background: darkorange;
+    border: 2px black;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.big-text {
+    font-size: 50px;
+    color: orange;
+}
+
+a.btn {
+    color: black;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+}
+
+a.btn-first {
+    background-color: darkblue;
+    color: #fff;
+}
+
+a.btn-second {
+    background-color: transparent;
+    color: #333;
+}
+
+a.btn:hover {
+    background: darkorange;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+
+.gallerytext {
+    height: auto;
+    color: blue;
+    background-color: #999;
+    float: left;
+    width: 100%;
+}
+
+.btn-third {
+    background-color: #999;
+    text-decoration: solid;
+}
+
+.tbox {
+    width: 200px;
+}
+
+.cardbox {
+    width: 300px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    float: left;
+    margin: 30px;
+}
